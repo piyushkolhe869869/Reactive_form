@@ -1,0 +1,12 @@
+body {
+    background-color: aliceblue;
+}
+
+.div1 section {
+    margin-top: 30px;
+    padding: 20p;
+}
+
+.div1 section:nth-child(2) {
+    margin-top: 30px;
+}

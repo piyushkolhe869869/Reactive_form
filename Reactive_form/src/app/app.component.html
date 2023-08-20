@@ -1,0 +1,110 @@
+<router-outlet></router-outlet>
+
+<div class="container">
+    <h2>Student Admission Form</h2>
+
+    <form [formGroup]="savedata" (ngSubmit)="save()">
+        <div class="form-row">
+            <div class="col">
+                Firstname: <input type="text" class="form-control" placeholder="First name" formControlName="firstname">
+            </div>
+            <div class="col">
+                Middelname: <input type="text" class="form-control" placeholder="Middle name" formControlName="middelename">
+            </div>
+            <div class="col">
+                Lastname: <input type="text" class="form-control" placeholder="Last name" formControlName="lastname">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" formControlName="email">
+            </div>
+
+        </div>
+        <div class="form-group">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress" formControlName="Address" placeholder="Address">
+        </div>
+        <div class="form-group">
+            <label for="inputAddress">Mobile Number</label>
+            <input type="text" class="form-control" id="inputAddress" formControlName="Mobile" placeholder="Mobile number">
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity" formControlName="city" placeholder="City">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <select id="inputState" formControlName="state" class="form-control" [value]="1">
+              <option selected value="1">Please select State</option>
+              <option value="2">Gujrat</option>
+              <option value="cj">CJ</option>
+              <option value="Mp">MP</option>
+              <option value="AP">AP</option>
+            </select>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="inputZip">Pin code</label>
+                <input type="text" class="form-control" id="inputZip" formControlName="pincode" placeholder="pin code">
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Sign in</button>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <form [formGroup]="savedata" (ngSubmit)="save">
+        <label for="Firstname">First Name:</label>
+        <input type="text" formControlName="firstname">
+
+        <label for="fullname">Middel name:</label>
+        <input type="text" formControlName="middelename">
+
+        <label for="fullname">Last name:</label>
+        <input type="text" formControlName="lastname">
+
+        <label for="email">Email:</label>
+        <input type="email" formControlName="email">
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" formControlName="Mobile">
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" formControlName="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="email">City:</label>
+        <input type="email" formControlName="city">
+
+        <label for="email">Email:</label>
+        <input type="email" formControlName="email">
+
+        <label for="email">pincode:</label>
+        <input type="email" formControlName="pincode">
+
+        <label for="address">Address:</label>
+        <textarea id="address" formControlName="Address" rows="4"></textarea>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" rows="4" formControlName="comments"></textarea>
+
+        <input class="submit-btn" type="submit" value="Submit">
+    </form>
+</div> -->
